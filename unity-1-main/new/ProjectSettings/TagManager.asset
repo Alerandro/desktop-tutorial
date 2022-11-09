@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Grounded
+  - Coin
+  - inimigo
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 2564092593
+    locked: 0
+  - name: ForeGround
+    uniqueID: 3935590493
+    locked: 0
+  - name: Personagem
+    uniqueID: 3346515617
+    locked: 0
+  - name: Tiro
+    uniqueID: 2074618949
+    locked: 0
+  - name: Inimigo
+    uniqueID: 2693609757
+    locked: 0
+  - name: menu
+    uniqueID: 1744356181
+    locked: 0
+  - name: life
+    uniqueID: 2418323381
+    locked: 0
+  - name: New Layer
+    uniqueID: 1267951827
+    locked: 0
