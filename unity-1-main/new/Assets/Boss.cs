@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class inimigo : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     [SerializeField]
     Animator anim;
@@ -32,11 +32,11 @@ public class inimigo : MonoBehaviour
     {
         if (check)
         {
-            
-            float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerPosition.position.x+7, playerPosition.position.y), step);
 
-            if(transform.position.x<playerPosition.position.x+5)
+            float step = speed * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerPosition.position.x + 7, playerPosition.position.y), step);
+
+            if (transform.position.x < playerPosition.position.x + 5)
             {
                 transform.localScale = new Vector3(-1, 1, 1);
             }
@@ -45,7 +45,7 @@ public class inimigo : MonoBehaviour
                 transform.localScale = new Vector3(1, 1, 1);
             }
 
-            if (Math.Abs(transform.position.x - playerPosition.position.x)<10f && cooldown<=0)
+            if (Math.Abs(transform.position.x - playerPosition.position.x) < 10f && cooldown <= 0)
             {
                 cooldown = 2f;
                 vidapersonagem.tomarDano(10);
@@ -57,7 +57,7 @@ public class inimigo : MonoBehaviour
 
     public void TakeDamage()
     {
-        life-= 25;
+        life -= 25;
         vidaInimigo.tomarDano(25);
         //anim.SetTrigger("TakeHit");
         if (life <= 0)

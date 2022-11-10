@@ -65,6 +65,9 @@ TagManager:
   - name: life
     uniqueID: 2418323381
     locked: 0
-  - name: New Layer
+  - name: gameOver
     uniqueID: 1267951827
+    locked: 0
+  - name: New Layer
+    uniqueID: 2115067001
     locked: 0
